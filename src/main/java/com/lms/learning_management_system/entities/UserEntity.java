@@ -1,8 +1,10 @@
 package com.lms.learning_management_system.entities;
 
 import jakarta.persistence.*;
-import lombok.*;
-
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.NoArgsConstructor;
 import java.util.UUID;
 
 @Entity
@@ -21,6 +23,5 @@ public class UserEntity {
     private String password;
 
     @ManyToOne
-    @JoinColumn(name = "role_id")
     private RoleEntity role;
 }
