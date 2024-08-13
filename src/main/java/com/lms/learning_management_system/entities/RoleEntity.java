@@ -20,7 +20,6 @@ public class RoleEntity {
     @Id
     @GeneratedValue
     private UUID id;
-
     @Enumerated(EnumType.STRING)
     private RoleEnum role;
 }

@@ -1,5 +1,6 @@
 package com.lms.learning_management_system.controller;
 
+import com.lms.learning_management_system.entities.UserEntity;
 import com.lms.learning_management_system.dto.UserDTO;
 import com.lms.learning_management_system.entities.service.UserService;
 import com.lms.learning_management_system.exception.UserNotFoundException;
@@ -9,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @RestController
