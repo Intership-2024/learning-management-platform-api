@@ -71,6 +71,7 @@ dependencies {
     implementation group: 'org.mapstruct', name: 'mapstruct', version: '1.6.0.RC1'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.mockito:mockito-core'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
 }
 
 tasks.named('test') {
